@@ -1,0 +1,16 @@
+current = int(input())
+count = 1
+max_count = 1
+prev = current
+
+while current != 0:
+    current = int(input())
+    if current == prev:
+        count += 1
+        if count > max_count:
+            max_count = count
+    else:
+        count = 1
+    prev = current
+
+print(max_count)

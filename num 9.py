@@ -1,0 +1,13 @@
+max_num = 0
+count_max = 0
+num = int(input())
+
+while num != 0:
+    if num > max_num:
+        max_num = num
+        count_max = 1
+    elif num == max_num:
+        count_max += 1
+    num = int(input())
+
+print(count_max)
